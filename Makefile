@@ -74,7 +74,8 @@ OBJS	?= $(patsubst %.c,$(BUILD)/%.o,$(filter %.c,$(SRCS)))
 OBJS	+= $(patsubst %.S,$(BUILD)/%.o,$(filter %.S,$(SRCS)))
 
 
-all: $(SHARED) $(STATIC)
+all: $(STATIC)
+#ll: $(SHARED) $(STATIC)
 
 
 -include $(OBJS:.o=.d)
